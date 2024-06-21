@@ -1,0 +1,35 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>detail</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>id</th>
+        <td>${member.id}</td>
+    </tr>
+    <tr>
+        <th>email</th>
+        <td>${member.memberEmail}</td>
+    </tr>
+    <tr>
+        <th>password</th>
+        <td>${member.memberPassword}</td>
+    </tr>
+    <tr>
+        <th>name</th>
+        <td>${member.memberName}</td>
+    </tr>
+    <tr>
+        <th>age</th>
+        <td>${member.memberAge}</td>
+    </tr>
+    <tr>
+        <th>mobile</th>
+        <td>${member.memberPhonenumber}</td>
+    </tr>
+</table>
+<p>${member.memberName} 님 환영합니다.</p>
+</body>
+</html>
