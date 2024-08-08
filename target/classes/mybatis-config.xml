@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeAliases>
+        <typeAlias type="com.recoding.project.dto.MemberDTO" alias="member"></typeAlias>
+    </typeAliases>
+    <!-- aliases는 별칭같은 느낌이다. -> typealias를 저렇게 줄여서 하겠다~ 라는 의미-->
+</configuration>

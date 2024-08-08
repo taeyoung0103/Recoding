@@ -1,0 +1,18 @@
+
+.blue {
+    color:red;
+}
+
+.border-blue {
+    border: 2px solid blue;
+}
+
+.back {
+    background-color: green;
+    opacity: 0.3;
+}
+
+.image-size {
+    width:200px;
+    hight:150px;
+}

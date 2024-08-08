@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Member">
+    <insert id="join" parameterType="member">
+        insert into cust(id, password, name, email)
+        values (#{id}, #{password}, #{name}, #{email})
+    </insert>
+    <select id="login" parameterType="member" resultType="member">
+        select * from cust where id=#{id} and password=#{password}
+    </select>
+    <select id="findAll" resultType="member">
+        select * from cust
+    </select>
+    <select id="findById" parameterType="Long" resultType="member">
+        select id from cust where id=#{id}
+    </select>
+    <delete id="delete" parameterType="Long">
+        delete from cust where id=#{id} and password=#{password}
+    </delete>
+    <select id="findByMemberEmail" parameterType="String" resultType="member">
+        select * from cust where email=#{email}
+    </select>
+    <update id="update" parameterType="member">
+        update cust set name=#{name}, email=#{email}
+        where id=#{id}
+    </update>
+</mapper>
